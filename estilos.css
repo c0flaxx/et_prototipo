@@ -1,0 +1,238 @@
+body {margin: 0px;
+    margin-top: 0px;
+overflow-x:hidden;
+}
+    style
+                .slide {
+                    position: relative;
+                    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+                    margin-top: 26px;
+                }
+                .slide-inner {
+                    position: relative;
+                    overflow: hidden;
+                    width: calc( 1870px + 2em);
+                    height: calc( 970px + 2em);
+                    margin: left 0px;
+                                       
+                }
+                .slide-open:checked + .slide-item {
+                    position: static;
+                    opacity: 100;
+                }
+                .slide-item {
+                    position: absolute;
+                    opacity: 0;
+                    -webkit-transition: opacity 0.6s ease-out;
+                    transition: opacity 0.6s ease-out;
+                }
+                .slide-item img {
+                    display: block;
+                    height: auto;
+                    max-width: 100%;
+                }
+                .slide-control {
+                    background: rgba(0, 0, 0, 0.28);
+                    border-radius: 50%;
+                    color: #fff;
+                    cursor: pointer;
+                    display: none;
+                    font-size: 40px;
+                    height: 40px;
+                    line-height: 35px;
+                    position: absolute;
+                    top: 50%;
+                    -webkit-transform: translate(0, -50%);
+                    cursor: pointer;
+                    -ms-transform: translate(0, -50%);
+                    transform: translate(0, -50%);
+                    text-align: center;
+                    width: 40px;
+                    z-index: 10;
+                }
+                .slide-control.prev {
+                    left: 2%;
+                }
+                .slide-control.next {
+                    right: 2%;
+                }
+                .slide-control:hover {
+                    background: rgba(0, 0, 0, 0.8);
+                    color: #aaaaaa;
+                }/*control slide 1*/
+                #slide-1-1:checked ~ .control-1-1,
+                #slide-2-1:checked ~ .control-2-1,
+                #slide-3-1:checked ~ .control-3-1 {
+                    display: block;
+                    
+                }
+                /*control slide 2*/
+                #slide-1-2:checked ~ .control-1-2,
+                #slide-2-2:checked ~ .control-2-2,
+                #slide-3-2:checked ~ .control-3-2 {
+                    display: block;
+                    
+                }
+                .slide-indicador {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    position: absolute;
+                    bottom: 2%;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                    z-index: 10;
+                }
+                .slide-indicador li {
+                    display: inline-block;
+                    margin: 0 5px;
+                }
+                .slide-circulo {
+                    color: #828282;
+                    cursor: pointer;
+                    display: block;
+                    font-size: 35px;
+                }
+                .slide-circulo:hover {
+                    color: #aaaaaa;
+                }/*control para el primer slide*/
+                #slide-1-1:checked ~ .control-1-1 ~ .slide-indicador 
+                     li:nth-child(1) .slide-circulo,
+                #slide-2-1:checked ~ .control-2-1 ~ .slide-indicador 
+                      li:nth-child(2) .slide-circulo,
+                #slide-3-1:checked ~ .control-3-1 ~ .slide-indicador 
+                      li:nth-child(3) .slide-circulo {
+                    color: #428bca;
+                }
+                /*control para el segundo slide*/
+                #slide-1-2:checked ~ .control-1-2 ~ .slide-indicador 
+                     li:nth-child(1) .slide-circulo,
+                #slide-2-2:checked ~ .control-2-2 ~ .slide-indicador 
+                      li:nth-child(2) .slide-circulo,
+                #slide-3-2:checked ~ .control-3-2 ~ .slide-indicador 
+                      li:nth-child(3) .slide-circulo {
+                    color: #428bca;
+                }
+                #titulo {
+                    width: 100%;
+                    position: absolute;
+                    padding: 0px;
+                    margin: 0px auto;
+                    text-align: center;
+                    font-size: 27px;
+                    color: rgba(255, 255, 255, 1);
+                    font-family: 'Open Sans', sans-serif;
+                    z-index: 9999;
+                    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
+                         -1px 0px 2px rgba(255, 255, 255, 0);
+                }
+    
+    @font-face {font-family: Diamond;
+            src: url(Diamond.ttf);}
+    
+    @font-face {font-family: Bizmo;
+                    src: url(Bizmo-Bold.otf);}
+    
+    section {background-image: url(FONDO.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        
+                }
+    
+            header {width: auto;
+                     height: 55px;
+                    background-color: rgb(2, 1, 1);
+                    margin-left: auto;
+                    margin-right: auto;}
+    
+    header img {float: left;}
+    
+                            header nav a {color: white;
+                                            text-decoration: none;
+                                            padding: 15px 15px 15px 15px;
+                                            margin: 15px;
+                                        margin-left: 100px;}
+                            header nav a:hover {color: greenyellow;}
+    
+    header nav {float: left;
+                margin-top: 10px;
+            font-family: Diamond;
+            font-size: 30px;
+            
+            position: fixed;
+    
+    z-index: 991;}
+            
+    
+    
+    #seccion2 {background-color: black;}
+    
+#seccion3 {background-image: url(proposito.png);}
+
+    
+h1 {color: white;
+    margin-top: 0%;
+    text-align: center;
+    font-family: Diamond;
+    font-size: 50px;}
+    
+    p {color: white;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: Bizmo;
+        font-size: 30px;}
+    
+    #seccion4 {background-color: black;}
+    h2 {color: white;
+            margin-top: 0px;
+            text-align: center;
+            font-family: Diamond;
+            font-size: 50px;}
+    #mapadellugar {width: 50%;
+    height: 65%;
+    margin-left: 25%;
+    margin-top: 0%;}
+    #seccion5 {background-color: darkblue;}
+    h3 {color: white;
+            margin-top: 0px;
+            text-align: center;
+            font-family: Diamond;
+            font-size: 50px;}
+    iframe {margin-left: 27%;}
+    
+    #seccion6 {background-color: black}
+    h4 {color: white;
+            margin-top: 0px;
+            text-align: center;
+            font-family: Diamond;
+            font-size: 50px;} 
+
+#logotipo {z-index: 1;
+position: absolute;
+left: 38%;
+margin-top: inherit;}
+
+#marco {z-index: -1;
+margin-top: -100px;}
+
+#mapagoogle {z-index: 1;}
+
+iframe {width: 800px;
+height: 600px;
+border-radius: 30px;
+border-color: rgb(31, 231, 31);
+border-width: 30px;
+border-style: solid;}
+
+
+.menu {background-color: black;
+    width: 100%;
+position: fixed;
+z-index: 991;}
+
+html {scroll-behavior:smooth;}
